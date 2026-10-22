@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Fes una pàgina HTML a on incloguis una de les imatges del teu joc creades 
+en activitats anteriors.
+Crea dues funcions per a dos esdeveniments diferents a la teva pàgina. 
+Per exemple, clicar damunt la imatge, passar el ratolí per damunt, etc. 
+Aquestes funcions han de provocar un canvi (moure la imatge de lloc, 
+baratar-la amb una altre, …)
+-->
+<html>
+    <head>
+        <title>Entrega esdeveniments en Javascript</title>
+        <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=0fb8f574-0964-4b8e-a38e-03b1c5e56c02
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SycYrrID7zIVrfxJfe0lw7pzHNFmjH0_Xxt0MbbsB9AmiKA9536_aZg2ZWwrCe56_W60xXq91zMrLheQU-nmLw" charset="UTF-8"></script><script>
+            function ahorcado_1(){
+                alert('Gracias por pinchar' + " ahorcado_1");
+            }
+            function ahorcado_3(){
+                alert('Acabas de pasar el ratón por encima' + " ahorcado_3");
+            }
+            function ahorcado_456(imagen){
+                document.getElementById(imagen).hidden = true;
+                alert('Acabas de ocultar' + " " + imagen);
+                
+            }
+        </script>    
+    </head>
+    <body onload="alert('La página se ha cargado completamente');">
+        <img src="img/ahorcado_0.png" id="ahorcado_0" width="300" height="295" 
+             onclick="alert('Gracias por pinchar' + ' ahorcado_0');"/>
+        <img src="img/ahorcado_1.png" id="ahorcado_1" width="300" height="295" 
+             onclick="ahorcado_1();"/>
+        <img src="img/ahorcado_2.png" id="ahorcado_2" width="300" height="295"
+             onmouseover="alert('Acabas de pasar el ratón por encima' + ' ahorcado_2');"/>
+        <img src="img/ahorcado_3.png" id="ahorcado_3" width="300" height="295"
+             onmouseover="ahorcado_3();"/>
+        <img src="img/ahorcado_4.png" id="ahorcado_4" width="300" height="295"
+             onmouseover="ahorcado_456('ahorcado_4');"/>
+        <img src="img/ahorcado_5.png" id="ahorcado_5" width="300" height="295"
+             onmouseover="ahorcado_456('ahorcado_5');"/>
+        <img src="img/ahorcado_6.png" id="ahorcado_6" width="300" height="295"
+             onmouseover="ahorcado_456('ahorcado_6');"/>
+    </body>
+</html>
